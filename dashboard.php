@@ -174,7 +174,7 @@
                                                                             <td>2005</td>
                                                                             <td>2006</td>
                                                                             <td>15.000,00</td>
-                                                                            <td><i class="ti-trash">Excluir </i> <i class="ti-write">Editar</i></td>
+                                                                            <td><i class="ti-trash">Excluir </i> <a href="cadastroveiculofocus.php"<i class="ti-write">Editar</i></a></td>
                                                                         </tr>
                                                                         
                                                                     </tbody>
@@ -188,7 +188,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <button type="button" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">Novo Veículo</button>
+                                                    <a target="_self" href="cadastroveiculo.php"><button type="button" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">Novo Veículo</button></a>
                                                 </div>
                                             </div>
                                         </div>

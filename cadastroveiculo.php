@@ -17,6 +17,9 @@
     <meta name="keywords"
     content=" Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
     <meta name="author" content="CodedThemes">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
     <!-- Favicon icon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <!-- Google font--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
@@ -29,9 +32,54 @@
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+    <link type="text/css" rel="stylesheet" href="lightbox-form.css">
+    <script src="lightbox-form.js" type="text/javascript"></script>
+<script type="text/javascript">
+	
+function abrirfoto(id){
+    
+	openbox("Enviar nova Foto" ,0,id);
+
+}
+</script>
 </head>
 
 <body>
+<div id="shadowing"></div>
+<div id="box" align="center">
+ <form>
+ <div class="card">
+                                                  
+                                                        <form >
+                                                           
+                                                           
+                                                        <div class="card">
+                                                        <div class="card-header">
+                                                            <div class="form-group row">
+                                                                <label class="col-form-label">Selecionar</label>
+                                                                <div class="col-sm-4">
+                                                                    <input type="file" class="form-control" name="foto" value="          ">
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            
+			<input type="hidden" name="idfoto" id="idfoto" value="">
+            <div class="form-group row">
+            <div class="col-sm-3"> 
+		<input type="button" onClick="closebox()" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20" name="enviar" value="Enviar">
+            </div>
+           
+            
+            <div class="col-sm-3">
+      <input type="button" name="cancel" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20" value="Cancel" onClick="closebox()">
+            </div>   </div>
+                                                        </div></div>
+    </form>
+                                                    </div>
+ 
+</div>
+
+
     <!-- Pre-loader start -->
     <div class="theme-loader">
         <div class="ball-scale">
@@ -149,7 +197,7 @@
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <h5>Dados do Veiculo</h5><br>
-                                                        <form>
+                                                        <form name="veiculo" action="dashboard2.php">
                                                             <div class="card">
                                                             <div class="card-header">
                                                             <div class="form-group row">
@@ -987,14 +1035,14 @@
 
                                                             </div>
                                                             <div class="form-group row">
-                                                                <img src="fotos/foto1.jpg" class="img-tabs col-sm-2" alt="Foto1">
-                                                                <img src="fotos/foto2.jpg" class="img-tabs col-sm-2" alt="Foto2">
-                                                                <img src="fotos/foto3.jpg" class="img-tabs col-sm-2" alt="Foto3">
+                                                                <img src="fotos/fotox.png" onclick="abrirfoto(1)" class="img-tabs col-sm-2" id="foto1" alt="Foto1">
+                                                                <img src="fotos/fotox.png" onclick="abrirfoto(2)" class="img-tabs col-sm-2" id="foto2" alt="Foto2">
+                                                                <img src="fotos/fotox.png" onclick="abrirfoto(3)" class="img-tabs col-sm-2" id="foto3" alt="Foto3">
 
                                                             </div>
                                                             <div class="form-group row">
                                                                 <div class="col-md-4">
-                                                                    <button type="button" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">Salvar Dados</button>
+                                                                    <button type="submit" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">Salvar Dados</button>
                                                                 </div>
 
                                                             </div>

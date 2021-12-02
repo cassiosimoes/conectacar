@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Projeto Integrador - Tela Login </title>
+    <title>Projeto Integrador - Erro de autenticação </title>
     <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -57,37 +57,22 @@
                 <div class="col-sm-12">
                     <!-- Authentication card start -->
                     <div class="login-card card-block auth-body mr-auto ml-auto">
-                        <form class="md-float-material" method="POST" action="logar.php">
+                        <form class="md-float-material" action="index.php">
                             <div class="text-center">
                                 <img src="assets/images/auth/logo-dark.png" alt="logo.png">
                             </div>
                             <div class="auth-box">
                                 <div class="row m-b-20">
                                     <div class="col-md-12">
-                                        <h3 class="text-left txt-primary">Entrar no Sistema</h3>
+                                        <h3 class="text-left txt-primary">Erro de Login</h3>
                                     </div>
                                 </div>
                                 <hr/>
-                                <div class="input-group">
-                                    <input type="email" class="form-control" name="login" placeholder="Endereço Email">
-                                    <span class="md-line"></span>
-                                </div>
-                                <div class="input-group">
-                                    <input type="password" name="senha" class="form-control" placeholder="Senha">
-                                    <span class="md-line"></span>
-                                </div>
                                 
-                                <div class="row m-t-25 text-left">
-                                    <div class="col-sm-5 col-xs-12 forgot-phone text-right">
-                                        <a href="cadastro.php" class="text-right f-w-600 text-inverse">Cadastre-se</a>
-                                    </div>
-                                    <div class="col-sm-5 col-xs-12 forgot-phone text-right">
-                                        <a href="recuperasenha.php" class="text-right f-w-600 text-inverse"> Recuperar senha</a>
-                                    </div>
-                                </div>
+                                
                                 <div class="row m-t-30">
                                     <div class="col-md-12">
-                                        <button type="submit" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">Entrar</button>
+                                        <button type="submit" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">Tentar novamente</button>
                                     </div>
                                 </div>
                                 <hr/>
