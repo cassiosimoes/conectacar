@@ -2,7 +2,7 @@
 
 ## Revenda de veículos
 ## Permite usuários a cadastrar veiculos para venda
-## Objetivo de ampliar o stock da loja
+## Objetivo de ampliar o estoque da loja
 
 
 
